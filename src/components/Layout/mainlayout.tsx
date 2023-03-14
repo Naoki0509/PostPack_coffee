@@ -1,5 +1,6 @@
-import { Header } from "@/src/components/Layout/header";
-import { AppShell, Footer } from "@mantine/core";
+import { AppShell } from "@mantine/core";
+import { FooterModule } from "@/src/components/Layout/footer";
+import { HeaderModule } from "@/src/components/Layout/header";
 
 type Props = {
 	children: React.ReactNode;
@@ -7,7 +8,7 @@ type Props = {
 
 export const MainLayout = ({ children }: Props) => {
 	return (
-		<AppShell header={<Header />} footer={<Footer />}>
+		<AppShell header={<HeaderModule />} footer={<FooterModule />}>
 			{children}
 		</AppShell>
 	);
