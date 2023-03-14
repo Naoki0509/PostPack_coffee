@@ -1,9 +1,11 @@
-import { Group, Header } from "@mantine/core";
+import { Group, Header, Text } from "@mantine/core";
 
 export const HeaderModule = () => {
 	return (
 		<Header height="sm">
-			<Group>PostPack Coffee</Group>
+			<Group>
+				<Text>PostPack Coffee</Text>
+			</Group>
 			<Group></Group>
 		</Header>
 	);
