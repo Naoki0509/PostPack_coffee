@@ -1,9 +1,9 @@
 import { MainLayout } from "@/src/components/Layout/mainlayout";
 import { Index } from "@/src/components/pages";
-import { NextPage } from "next";
+import { About } from "@/src/components/pages/about";
 import Head from "next/head";
 
-const Home: NextPage = () => {
+const Home = () => {
 	return (
 		<MainLayout>
 			<Head>
@@ -12,7 +12,7 @@ const Home: NextPage = () => {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Index />
+			<About />
 		</MainLayout>
 	);
 };

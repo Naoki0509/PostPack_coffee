@@ -1,12 +1,12 @@
-import { Box, Container } from "@mantine/core";
+import { Box, Text, Title } from "@mantine/core";
 import { FC } from "react";
 
 export const Index: FC = () => {
 	return (
 		<>
-			<Container>
-				<Box></Box>
-			</Container>
+			<Box>
+				<Title>PostPack Coffeeのメインページです。</Title>
+			</Box>
 		</>
 	);
 };
