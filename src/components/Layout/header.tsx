@@ -31,7 +31,7 @@ export const HeaderModule = () => {
 				<Text className={classes.title}>PostPack Coffee</Text>
 			</Group>
 			<Group className={classes.buttonGroup}>
-				<Button variant="filled" color={"dark"} component="a" href="/signup">
+				<Button color={"dark"} component="a" href="/signup">
 					サインイン
 				</Button>
 				<Button variant="outline" color={"dark"} component="a" href="/login">
