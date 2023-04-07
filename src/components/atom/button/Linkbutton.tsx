@@ -3,8 +3,13 @@ import Link, { LinkProps } from "next/link";
 
 type Props = {
   href: string;
-  linkProps?: LinkProps;
   children: React.ReactNode;
 };
 
-export const LinkButton = () => {};
+export const LinkButton = ({ children, href }: Props) => {
+  return (
+    <Link href={href}>
+      <Button>{children}</Button>
+    </Link>
+  );
+};

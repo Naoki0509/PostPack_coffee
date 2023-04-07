@@ -1,3 +1,4 @@
+import { LinkButton } from "@/src/components/atom/button/Linkbutton";
 import { Button, createStyles, Group, Header, Text } from "@mantine/core";
 
 export const HeaderModule = () => {
@@ -34,6 +35,7 @@ export const HeaderModule = () => {
         <Button color={"dark"} component="a" href="/signup">
           サインイン
         </Button>
+
         <Button variant="outline" color={"dark"} component="a" href="/login">
           ログイン
         </Button>
