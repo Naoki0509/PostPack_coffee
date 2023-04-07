@@ -1,7 +1,7 @@
 import { NextPage } from "next";
 
 const Signup: NextPage = () => {
-	return <div>Signup</div>;
+  return <div>Signup</div>;
 };
 
 export default Signup;

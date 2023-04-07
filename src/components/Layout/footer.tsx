@@ -2,22 +2,22 @@ import { createStyles, Footer } from "@mantine/core";
 import { FC } from "react";
 
 export const FooterModule: FC = () => {
-	const styles = createStyles({
-		footer: {
-			display: "flex",
-			justifyContent: "center",
-			alignContent: "center",
-			padding: "5px 10px",
-			fontSize: "1rem",
-			fontWeight: 500,
-		},
-	});
+  const styles = createStyles({
+    footer: {
+      display: "flex",
+      justifyContent: "center",
+      alignContent: "center",
+      padding: "5px 10px",
+      fontSize: "1rem",
+      fontWeight: 500,
+    },
+  });
 
-	const { classes } = styles();
+  const { classes } = styles();
 
-	return (
-		<Footer className={classes.footer} height="sm">
-			@ created by Naoki. 2023
-		</Footer>
-	);
+  return (
+    <Footer className={classes.footer} height="sm">
+      @ created by Naoki. 2023
+    </Footer>
+  );
 };
