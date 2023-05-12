@@ -1,4 +1,5 @@
-import { Box, Container, Text, Title } from "@mantine/core";
+import { Box, Title } from "@mantine/core";
+
 import { FC } from "react";
 
 export const About: FC = () => {

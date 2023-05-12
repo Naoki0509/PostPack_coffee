@@ -8,7 +8,8 @@
     "dev:path": "pathpida -p .gitignore -w src/libs",
     "build": "pathpida -p .gitignore && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier --write ."
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -22,6 +23,7 @@
     "@types/react-dom": "18.0.11",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "firebase": "^9.20.0",
     "next": "13.2.4",
     "prettier": "^2.8.7",
     "react": "18.2.0",

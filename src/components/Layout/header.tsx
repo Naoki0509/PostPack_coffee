@@ -1,4 +1,4 @@
-import { LinkButton } from "@/src/components/atom/button/Linkbutton";
+import { Navlink } from "@/src/components/mol/navlink";
 import { Button, createStyles, Group, Header, Text } from "@mantine/core";
 
 export const HeaderModule = () => {
@@ -13,12 +13,12 @@ export const HeaderModule = () => {
     title: {
       fontWeight: "bold",
       fontSize: "30px",
-      [theme.fn.smallerThan("sm")]: {
+      [theme.fn.smallerThan("md")]: {
         fontSize: "20px",
       },
     },
     buttonGroup: {
-      [theme.fn.smallerThan("sm")]: {
+      [theme.fn.smallerThan("md")]: {
         display: "none",
       },
     },
@@ -30,6 +30,7 @@ export const HeaderModule = () => {
     <Header height="sm" className={classes.header}>
       <Group>
         <Text className={classes.title}>PostPack Coffee</Text>
+        <Navlink />
       </Group>
       <Group className={classes.buttonGroup}>
         <Button color={"dark"} component="a" href="/signup">

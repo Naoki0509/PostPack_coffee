@@ -1,9 +1,9 @@
 import { MainLayout } from "@/src/components/Layout/mainlayout";
-import { Index } from "@/src/components/pages";
 import { About } from "@/src/components/pages/about";
+import { NextPage } from "next";
 import Head from "next/head";
 
-const Home = () => {
+const AboutPage: NextPage = () => {
   return (
     <MainLayout>
       <Head>
@@ -17,4 +17,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AboutPage;

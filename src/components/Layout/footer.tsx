@@ -17,7 +17,7 @@ export const FooterModule: FC = () => {
 
   return (
     <Footer className={classes.footer} height="sm">
-      @ created by Naoki. 2023
+      &copy; {`${new Date().getFullYear()} Created by PostPack Coffee.`}
     </Footer>
   );
 };
