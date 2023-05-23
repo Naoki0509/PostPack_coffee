@@ -44,7 +44,7 @@ export const GlobalViewModel = () => {
   const [loginError, setLoginError] = useState(false);
   const [resetPasswordError, setResetPasswordError] = useState(false);
 
-  const signup = async (email: string, password: string) => {
+  const Signup = async (email: string, password: string) => {
     setIsLoadingLogin(true);
     const auth = getAuth();
     try {
@@ -90,7 +90,7 @@ export const GlobalViewModel = () => {
     initialize,
     sessionUser,
     setSessionUser,
-    signup,
+    Signup,
     login,
     logout,
     resetPassword,
