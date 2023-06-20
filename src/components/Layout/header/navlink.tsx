@@ -1,5 +1,5 @@
 import { pagesPath } from "@/lib/$path";
-import { NavLinkItem } from "@/src/components/atom/NvlinkItem";
+import { NavLinkItem } from "@/src/components/Layout/header/navItem";
 import { Group, createStyles } from "@mantine/core";
 
 const navItem = [

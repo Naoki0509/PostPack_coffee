@@ -1,12 +1,11 @@
 import { MainLayout } from "@/src/components/Layout/mainlayout";
-import { About } from "@/src/components/pages/about";
+import { Title } from "@mantine/core";
 import { NextPage } from "next";
-import Head from "next/head";
 
 const AboutPage: NextPage = () => {
   return (
     <MainLayout>
-      <About />
+      <Title order={2}>About</Title>
     </MainLayout>
   );
 };

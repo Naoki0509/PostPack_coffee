@@ -7,7 +7,7 @@ type Props = {
 };
 
 export const MainLayout = ({ children }: Props) => {
-  const styles = createStyles((theme) => ({
+  const styles = createStyles(() => ({
     layout: {
       minHeight: "100vh",
       maxWidth: 1600,

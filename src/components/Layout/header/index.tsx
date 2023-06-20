@@ -1,4 +1,4 @@
-import { Navlink } from "@/src/components/mol/navlink";
+import { Navlink } from "@/src/components/Layout/header/navlink";
 import { Button, createStyles, Group, Header, Text } from "@mantine/core";
 
 export const HeaderModule = () => {
