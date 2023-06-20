@@ -2,10 +2,14 @@ import "src/styles/globals.css";
 import type { AppProps } from "next/app";
 import { MantineProvider } from "@mantine/core";
 import Head from "next/head";
+import { useEffect } from "react";
+import useGlobalViewModel, { GlobalContext } from "@/lib/firebase/firebase";
 
 export default function App({ Component, pageProps }: AppProps) {
+  const globalViewModel = useGlobalViewModel();
+
   return (
-    <>
+    <GlobalContext.Provider value={{ ...globalViewModel }}>
       <MantineProvider
         withGlobalStyles
         withNormalizeCSS
@@ -21,7 +25,6 @@ export default function App({ Component, pageProps }: AppProps) {
         </Head>
         <Component {...pageProps} />
       </MantineProvider>
-      ;
-    </>
+    </GlobalContext.Provider>
   );
 }

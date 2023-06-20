@@ -2,6 +2,9 @@ export const pagesPath = {
   "about": {
     $url: (url?: { hash?: string }) => ({ pathname: '/about' as const, hash: url?.hash })
   },
+  "blog": {
+    $url: (url?: { hash?: string }) => ({ pathname: '/blog' as const, hash: url?.hash })
+  },
   "login": {
     $url: (url?: { hash?: string }) => ({ pathname: '/login' as const, hash: url?.hash })
   },

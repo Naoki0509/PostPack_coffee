@@ -1,14 +1,13 @@
 import { MainLayout } from "@/src/components/Layout/mainlayout";
-import { Index } from "@/src/components/pages";
+import { Title } from "@mantine/core";
 import { NextPage } from "next";
-import Head from "next/head";
 
-const Home: NextPage = () => {
+const BlogPage: NextPage = () => {
   return (
     <MainLayout>
-      <Index />
+      <Title order={2}>Blog</Title>
     </MainLayout>
   );
 };
 
-export default Home;
+export default BlogPage;
